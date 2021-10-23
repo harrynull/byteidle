@@ -196,13 +196,13 @@ export const DEVELOPMENTS = [
         icon: 'clipboard',
         color: 'green',
         name: '铁剪切板',
-        effect: '手动复制粘贴产生 512 倍的字节。',
+        effect: '手动复制粘贴产生 256 倍的字节。',
         description: '更换为铁质的剪切板，现在可以更有效率地大块复制粘贴了',
         cost: 128,
         owned: false,
         modifier: (inc,) => inc,
         initModifier: function () {
-            this.manualTypeModifier *= 512
+            this.manualTypeModifier *= 256
         }
     },
     {

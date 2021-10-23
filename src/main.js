@@ -16,7 +16,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(SuiVue)
 Vue.use(Toasted, {position:'bottom-center', duration: 3000})
 Vue.config.productionTip = false
-Vue.config.silent = true
 
 new Vue({
   render: h => h(App),
