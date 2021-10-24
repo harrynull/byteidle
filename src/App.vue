@@ -139,7 +139,7 @@ export default {
         quantities[dev.name] = dev.owned
 
       const currentTime = new Date().getTime() / 1000
-      const timeDiff = localStorage.time ? localStorage.time - currentTime : 1
+      const timeDiff = localStorage.time ? currentTime - (+localStorage.time) : 1
       if (timeDiff > 6) {
         this.elapsed(timeDiff, Math.max(Math.round(timeDiff / 10000), 1))
       }
